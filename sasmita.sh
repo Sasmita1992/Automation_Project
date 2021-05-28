@@ -1,3 +1,4 @@
+#This is my scripting Details#
 sudo apt update -y
 dpkg --get-selections | grep apache
 sudo apt install apache2
