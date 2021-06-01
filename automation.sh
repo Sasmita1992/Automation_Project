@@ -19,7 +19,7 @@ s3_bucket=upgrad-sasmita
 aws s3 \
 cp /tmp/${myname}-httpd-logs-${timestamp}.tar \s3://${s3_bucket}/${myname}-httpd-logs-${timestamp}.tar
 #Creating Inventory.html iand apend all the data every time#
-
+#cd /var/log
 size=$(du -h "${myname}-httpd-logs-${timestamp}.tar" | cut -f1)
 FILE=/var/www/html/inventory.html
 if [ -f "$FILE" ]; then
